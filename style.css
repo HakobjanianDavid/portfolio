@@ -1,0 +1,140 @@
+
+
+.wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.face_photo {
+    width: 250px;
+    height: 250px;
+    margin: 0 5em 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: url(img/photo.jpg) no-repeat -122px -46px;
+    background-size: 150%;
+}
+
+.information {
+    /* margin: 0 0 0 10%; */
+}
+
+.name {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 0.3em;
+    text-transform: uppercase;
+
+    /* color: #FFFFFF; */
+}
+
+.society {
+    list-style: decimal;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+
+.society a {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+
+    text-decoration: none;
+}
+
+
+
+#nav {
+    width: 81%;
+    margin: 20px auto;
+}
+  
+.menu-item {
+    margin: 0 auto;
+    width: 64%;
+    border: 2px solid #bdbdbd;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    border: 1px solid white;
+}
+
+
+.menu-item .submenu {
+    display: none;
+    list-style: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    border: 2px solid rgb(189, 189, 189);
+    width: 51%;
+}
+
+.submenu .submenu_item {
+    padding-top: 2vw;
+}
+/* 
+.submenu li:last-child {
+    padding-bottom: 2vw;
+} */
+
+.submenu .submenu_item:hover {
+    background-color: red;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sliderConteiner {
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid #bdbdbd;
+    position: relative;
+  }
+  
+  .next, .prev {
+    position: absolute;
+    top: 20vh;
+    width: 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .next:hover, .prev:hover {
+    background-color: #bdbdbd;
+    color: black;
+  }
+  
