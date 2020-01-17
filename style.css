@@ -66,14 +66,15 @@
     cursor: pointer;
 }
 
-.title {
-    /* border: 1px solid white; */
+.mySlides {
+    grid-template-columns: 2fr 1.4fr;
+    height: 100%;
 }
 
-
-.mySlides {
-    grid-template-columns: 2fr 1.3fr;
-    height: 100%;
+.descriptionOfProject {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
 }
 
 .picture {
@@ -83,6 +84,7 @@
 .repaire {
     background: url(img/Rapaire.png);
     background-size: cover;
+    background-position-y: -3px;
 }
 
 .theyelow {
@@ -98,7 +100,6 @@
     padding: 0;
     margin: 0;
     z-index: 1;
-    /* position: absolute; */
     background-color: white;
 }
 
@@ -121,34 +122,43 @@
 }
 
 .sliderConteiner {
-    width: 90%;
-    height: 77%;
-    border: 2px solid #bdbdbd;
-    position: relative;
-  }
-  
-  .next, .prev {
-    position: absolute;
-    top: 20vh;
-    width: 5vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  .hover {
-    background-color: #bdbdbd;
-    color: black;
-    transition: ease;
-  }
+  width: 90%;
+  height: 77%;
+  border: 0.3px solid #bdbdbd;
+  position: relative;
+}
+
+.next, .prev {
+  position: absolute;
+  top: 43%;
+  width: 5%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  color: #000000;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #c4bbbb;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.hover {
+  background-color: #c4bbbb;
+  color: black;
+  transition: ease;
+}
   
 
