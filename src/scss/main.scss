@@ -1,0 +1,175 @@
+.wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.face_photo {
+    width: 250px;
+    height: 250px;
+    margin: 0 5em 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: url(img/photo.jpg) no-repeat -122px -46px;
+    background-size: 150%;
+}
+
+.name {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 0.3em;
+    text-transform: uppercase;
+    grid-column: -1/1;
+}
+
+.society {
+    list-style: decimal;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+
+.society a {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+
+    text-decoration: none;
+}
+
+.information {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+#nav {
+    width: 100%;
+    margin: 20px auto;
+}
+  
+.menu-item {
+    margin: 0 auto;
+    border: 1px solid #bdbdbd;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mySlides {
+    grid-template-columns: 2fr 1.4fr;
+    height: 100%;
+}
+
+.slides {
+    height: 100%;
+}
+
+.descriptionOfProject {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 50px 10px 0; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.picture {
+    height: 100%;
+}
+
+.repaire {
+    background: url(img/Rapaire.png);
+    background-size: cover;
+    background-position-y: -3px;
+}
+
+.theyelow {
+    background: url(img/Theyelow.png);
+    background-size: cover;
+    background-position-y: -3px;
+}
+
+.menu-item .submenu {
+    display: none;
+    list-style: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* position: absolute; */
+    z-index: 1;
+    background-color: white;
+}
+
+.submenu .submenu_item {
+    padding-top: 2vw;
+}
+
+
+.submenu .submenu_item:hover {
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 750px;
+    width: 100%;
+}
+
+.sliderConteiner {
+  width: 90%;
+  height: 77%;
+  border: 0.3px solid #bdbdbd;
+  position: relative;
+}
+
+.next, .prev {
+  position: absolute;
+  top: 43%;
+  width: 5%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  color: #000000;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #c4bbbb;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.hover {
+  background-color: #c4bbbb;
+  color: black;
+  transition: ease;
+}
+  
+
+
